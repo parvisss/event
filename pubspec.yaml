@@ -1,0 +1,72 @@
+name: todo_app_forudevs
+description: "A new Flutter project."
+publish_to: 'none'  # Prevents accidental publishing to pub.dev
+
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the build number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+
+
+version: 1.0.0+1  # Version and build number of the application
+
+environment:
+  sdk: ^3.5.0  # Specifies the Dart SDK version to use
+
+dependencies:
+  flutter:
+    sdk: flutter  # Core Flutter SDK
+
+
+  cupertino_icons: ^1.0.8  
+  flutter_svg: ^2.0.10+1  
+  flutter_screenutil: ^5.9.3  
+  sqflite: ^2.3.3+1 
+  timezone: ^0.9.4  
+  flutter_bloc: ^8.1.6 
+  get_it: ^7.7.0  
+  zoom_tap_animation: ^1.1.0 
+  intl: ^0.19.0  
+  equatable: ^2.0.5  
+  permission_handler: ^11.3.1
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter  
+  flutter_lints: ^4.0.0  
+
+flutter:
+  uses-material-design: true  # Includes Material Icons for use in the app
+
+  assets:
+    - assets/fonts/ 
+    - assets/icons/ 
+
+  fonts:
+    # Define custom fonts for the app
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300  
+        - asset: assets/fonts/Poppins-Black.ttf
+          weight: 900   
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400  
+        - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+          weight: 400  
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600  
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500  
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700  
